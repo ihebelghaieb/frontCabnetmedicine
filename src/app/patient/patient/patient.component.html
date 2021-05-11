@@ -1,0 +1,46 @@
+<section class="wrapper">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="page-header"><i class="fa fa-laptop"></i> Listes Patients</h3>
+        <ol class="breadcrumb">          
+          <li>Listes Patient</li>
+          
+        </ol>
+      </div>
+    </div>
+  <div class="col-9">
+    <a class="" href="">Ajouter Patients</a>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">date</th>
+            <th scope="col">email</th>
+            <th scope="col">num telephone</th>
+            <th scope="col">Adresse</th>
+            <th scope="col">Editer</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of listePatients">
+            <td>{{ p.id_pat}}</td>
+            <td>{{ p.nom_pat}}</td>
+            <td>{{ p.prenom_pat}}</td>
+            <td>{{ p.date_pat}}</td>
+            <td>{{ p.email_pat}}</td>
+            <td>{{ p.tel_pat}}</td>
+            <td>{{ p.adresse_pat}}</td>
+            
+            
+    
+        
+          </tr>                 
+        </tbody>
+      </table>
+  
+  </div>
+  </section>
+	
